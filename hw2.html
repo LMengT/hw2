@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background:#ec6e81;
+}
+
+/* 页眉/Blog 标题 */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(239, 149, 182);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* 设置上导航栏的样式 */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(247, 254, 150);
+}
+
+/* 设置 topnav 链接的样式 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #131212;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* 改变鼠标悬停时的颜色 */
+.topnav a:hover {
+  background-color: rgb(251, 187, 222);
+  color: black;
+}
+
+/* 创建两个不相等的彼此并排的浮动列 */
+/* 左列 */
+.leftcolumn {   
+  float: left;
+  width: 50%;
+}
+
+/* 右列 */
+.rightcolumn {
+  float: left;
+  width: 50%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* 伪图像 */
+.fakeimg {
+  background-color: rgb(227, 142, 142);
+  width: 100%;
+  padding: 20px;
+}
+
+/* 为文章添加卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* 清除列之后的浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 页脚 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(232, 175, 175);
+  margin-top: 20px;
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Website</h1>
+  <p>爱吃冰淇淋的小仙女</p>
+</div>
+
+<div class="topnav">
+  <a href="C:\Users\ASUS\Desktop\新建文件夹\个人简介.html">个人简介</a>
+  <a href="C:\Users\ASUS\Desktop\新建文件夹\一些照片.html">一些照片</a>
+  <a href="http://www.jxufe.edu.cn/">人生理想</a>
+  <a href="http://www.jxufe.edu.cn/">未来计划</a>
+  <a href="http://www.jxufe.edu.cn/">喜欢的地方</a>
+  <a href="https://baike.baidu.com/item/%E5%A4%A9%E7%BA%BF%E5%AE%9D%E5%AE%9D/3232396" style="float:right">关于我</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>人生经历</h2>
+      <h5>2003.09-2022.11</h5>
+      <div class="fakeimg" style="height:70px;">相关内容<p>......</p></div>
+      <div class="fakeimg" style="height:70px;">很好</div>
+      <p>未完待续</p>
+      <p>......</p>
+    </div>
+    <div class="card">
+      <h2>相关</h2>
+      <h5>初中</h5>
+      <div class="fakeimg" style="height:70px;">123456789</div>
+      <p>其他</p>
+      <p>......</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:150px;">联系方式<p>电话:189****4628</p><p>QQ：1733****60</p></div>
+      <p>软件11班</p>
+    </div>
+    <div class="card">
+      <h3>冰淇淋</h3>
+      <div class="fakeimg" style="height:50px;"><p>甜筒</p></div>
+      <div class="fakeimg" style="height:50px;"><p>圣代</p></div>
+      <div class="fakeimg" style="height:70px;"><p>雪糕</p></div>
+    </div>
+    <div class="card">
+      <h3>此外</h3>
+      <p>......</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>LMengT的个人website</h2>
+</div>
+
+</body>
+</html>
